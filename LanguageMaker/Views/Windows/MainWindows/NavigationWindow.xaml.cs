@@ -29,11 +29,14 @@ namespace LanguageMaker.Views.Windows.MainWindows
             if (string.IsNullOrEmpty(ConsonantsTb.Text) || string.IsNullOrEmpty(VowelsTb.Text))
             {
                 MessageBox.Show("Заполните поля", "", MessageBoxButton.OK, MessageBoxImage.Warning);
+                return;
             }
-            else
-            {
-                MessageBox.Show("Этого не достаточно для создания языка", "", MessageBoxButton.OK, MessageBoxImage.Warning);
-            }
+
+            //if ()
+            //{
+            //    MessageBox.Show("Этого не достаточно для создания языка", "", MessageBoxButton.OK, MessageBoxImage.Warning);
+            //    return;
+            //}
         }
         #region AddEnglishConsonantsClicks
         private void ConsonantBtn1_Click(object sender, RoutedEventArgs e)
@@ -161,7 +164,7 @@ namespace LanguageMaker.Views.Windows.MainWindows
                 + ConsonantBtn24.Content + " ";
         }
         #endregion
-
+        #region AddEnglishVowelsClicks
         private void VowelBtn1_Click(object sender, RoutedEventArgs e)
         {
             VowelsTb.Text = VowelsTb.Text + VowelBtn1.Content + " ";
@@ -241,5 +244,7 @@ namespace LanguageMaker.Views.Windows.MainWindows
                 + VowelBtn14.Content + " "
                 + VowelBtn15.Content + " ";
         }
+        #endregion
+
     }
 }

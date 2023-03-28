@@ -62,6 +62,9 @@
     <Compile Include="Views\Windows\MainWindows\NavigationWindow.xaml.cs">
       <DependentUpon>NavigationWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\Windows\OutputWindows\SpellingAndPhonologyWindow.xaml.cs">
+      <DependentUpon>SpellingAndPhonologyWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\Windows\StartWindows\AuthorizationWindow.xaml.cs">
       <DependentUpon>AuthorizationWindow.xaml</DependentUpon>
     </Compile>
@@ -98,6 +101,10 @@
   <ItemGroup />
   <ItemGroup>
     <Page Include="Views\Windows\MainWindows\NavigationWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Windows\OutputWindows\SpellingAndPhonologyWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
